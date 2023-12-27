@@ -1,0 +1,72 @@
+@import "modern-normalize/modern-normalize.css";
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #2c3e50;
+  background-color: #f8f6f1;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+/* ======= Components ======== */
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .tablet-container {
+    max-width: 584px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media only screen and (min-width: 1200px) {
+  section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+section.hero {
+  padding-top: 180px;
+}
