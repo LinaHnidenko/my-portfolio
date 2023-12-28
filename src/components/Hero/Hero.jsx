@@ -1,4 +1,5 @@
 import {
+  IconArrowBadgeDown,
   IconArrowBadgeRight,
   IconBrandGithub,
   IconBrandLinkedin,
@@ -8,15 +9,13 @@ import css from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="container">
         <div className={css.wrapper}>
           <div className={css.descWrapper}>
             <h1 className={css.title}>Frontend React Developer</h1>
             <p className={css.desc}>
-              Hi, I'm Lina Hnidenko. 😊 <br />
-              As a junior React developer, I'm keen on building user-friendly
-              web experiences.
+              Hi, I'm Lina Hnidenko. 😊
               <br />
               Based in Ukraine. 📍
             </p>
@@ -43,7 +42,11 @@ const Hero = () => {
         <div className={css.skillsWrapper}>
           <p className={css.techName}>
             Tech Stack
-            <IconArrowBadgeRight width="35px" height="35px" />
+            {window.innerWidth < 767 ? (
+              <IconArrowBadgeDown width="35px" height="35px" />
+            ) : (
+              <IconArrowBadgeRight width="35px" height="35px" />
+            )}
           </p>
           <ul className={css.techList}>
             <li className={css.techListItem}>

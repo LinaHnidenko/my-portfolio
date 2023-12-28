@@ -59,6 +59,12 @@ a {
 section {
   padding-top: 96px;
   padding-bottom: 96px;
+  opacity: 1;
+  transform: translateX(-50px);
+  transition: transform 1s;
+}
+section.active {
+  transform: translateX(0);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -68,5 +74,10 @@ section {
   }
 }
 section.hero {
-  padding-top: 180px;
+  padding-top: 120px;
+}
+@media only screen and (min-width: 768px) {
+  section.hero {
+    padding-top: 180px;
+  }
 }

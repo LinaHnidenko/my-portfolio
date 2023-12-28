@@ -1,20 +1,32 @@
 .wrapper {
   display: flex;
+
   justify-content: space-evenly;
-
   align-items: center;
-  column-gap: 60px;
 
-  margin-bottom: 100px;
+  gap: 40px;
+  flex-direction: column-reverse;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
 }
 .descWrapper {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  /* align-items: center; */
 
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 12px;
   flex-direction: column;
+  max-width: 500px;
 }
+
 .title {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.5;
@@ -27,12 +39,41 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2c3e50;
-  max-width: 500px;
+  text-align: center;
+  /* min-width: 250px; */
 }
+
+@media only screen and (min-width: 768px) {
+  .title {
+    text-align: start;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    text-transform: none;
+    margin-bottom: 36px;
+  }
+  .desc {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 48px;
+  }
+}
+
 .list {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  /* justify-content: start; */
   gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list {
+    justify-content: start;
+  }
 }
 .link {
   color: #2c3e50;
@@ -83,8 +124,8 @@
 }
 
 .image {
-  width: 300px;
-  height: 400px;
+  max-width: 300px;
+  max-height: 400px;
   display: block;
 
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
@@ -97,6 +138,7 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 .techName {
   font-weight: 700;
@@ -114,12 +156,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .techListItem {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -127,4 +170,12 @@
 .techListItem:hover,
 .techListItem:focus {
   transform: translateY(-1rem);
+}
+@media only screen and (min-width: 768px) {
+  .techList {
+    gap: 60px;
+  }
+  .techListItem {
+    gap: 10px;
+  }
 }
