@@ -33,6 +33,9 @@
   letter-spacing: 0.02em;
   color: #2c3e50;
 }
+.subtitle {
+  text-align: center;
+}
 .desc {
   font-weight: 400;
   font-size: 20px;
@@ -51,6 +54,9 @@
     max-width: 496px;
     text-transform: none;
     margin-bottom: 36px;
+  }
+  .subtitle {
+    text-align: start;
   }
   .desc {
     text-align: start;
@@ -137,7 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .techName {
@@ -172,6 +178,9 @@
   transform: translateY(-1rem);
 }
 @media only screen and (min-width: 768px) {
+  .skillsWrapper {
+    gap: 60px;
+  }
   .techList {
     gap: 60px;
   }

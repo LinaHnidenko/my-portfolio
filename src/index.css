@@ -59,12 +59,6 @@ a {
 section {
   padding-top: 96px;
   padding-bottom: 96px;
-  opacity: 1;
-  transform: translateX(-50px);
-  transition: transform 1s;
-}
-section.active {
-  transform: translateX(0);
 }
 
 @media only screen and (min-width: 1200px) {

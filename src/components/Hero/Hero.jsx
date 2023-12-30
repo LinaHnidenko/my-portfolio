@@ -13,12 +13,9 @@ const Hero = () => {
       <div className="container">
         <div className={css.wrapper}>
           <div className={css.descWrapper}>
-            <h1 className={css.title}>Frontend React Developer</h1>
-            <p className={css.desc}>
-              Hi, I'm Lina Hnidenko. 😊
-              <br />
-              Based in Ukraine. 📍
-            </p>
+            <h1 className={css.title}>Hi, I'm Lina Hnidenko 😊</h1>
+            <h2 className={css.subtitle}> Frontend React Developer</h2>
+            <p className={css.desc}>Based in Ukraine. 📍</p>
             <ul className={css.list}>
               <li>
                 <a
