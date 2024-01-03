@@ -24,14 +24,32 @@ const Header = () => {
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "#contacts",
     },
   ];
+
+  const handleSmoothScroll = (event, link = "#home") => {
+    event.preventDefault();
+
+    const targetElement = document.querySelector(link);
+    window.scrollTo({
+      top:
+        targetElement.offsetTop - document.querySelector("header").offsetHeight,
+      behavior: "smooth",
+    });
+
+    setIsOpen(false);
+  };
+
   return (
     <header className={css.header}>
       <div className="container">
         <nav className={css.nav}>
-          <a href="#home" className={css.logo}>
+          <a
+            href="#home"
+            className={css.logo}
+            onClick={(event) => handleSmoothScroll(event)}
+          >
             Lina
           </a>
           {/* Burger Menu */}
@@ -43,7 +61,11 @@ const Header = () => {
           <ul className={`${css.navList} ${isOpen && css.open}`}>
             {navlinks.map(({ name, link }, idx) => (
               <li key={idx} className={css.item}>
-                <a href={link} className={css.link}>
+                <a
+                  href={link}
+                  className={css.link}
+                  onClick={(event) => handleSmoothScroll(event, link)}
+                >
                   {name}
                 </a>
               </li>

@@ -1,0 +1,86 @@
+.sectionContacts {
+  background-color: #f4f2f0;
+}
+.contactsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ff7f50;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .contactsWrapper {
+    flex-direction: row;
+    gap: 120px;
+  }
+  .title {
+    text-align: start;
+    margin-bottom: 50px;
+  }
+}
+
+.location {
+  font-weight: 400;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.email {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2c3e50;
+}
+.email:hover,
+.email:focus {
+  color: #007bff;
+}
+
+.descWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .descWrapper {
+    gap: 30px;
+    flex-direction: row;
+  }
+}
+
+.textWrapper {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .textWrapper {
+    align-items: flex-start;
+  }
+}
+
+.iconBox {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 50%;
+}
+
+.icon {
+  color: #007bff;
+  width: 45px;
+  height: 40px;
+  padding: 5px;
+}

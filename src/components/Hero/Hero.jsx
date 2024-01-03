@@ -9,7 +9,7 @@ import css from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <section className="hero" id="home">
+    <section className="hero" id="home" data-aos="fade-right">
       <div className="container">
         <div className={css.wrapper}>
           <div className={css.descWrapper}>

@@ -20,11 +20,6 @@
 @media only screen and (min-width: 768px) {
   .title {
     text-align: start;
-    font-size: 56px;
-    line-height: 1.07;
-    max-width: 496px;
-    text-transform: none;
-    margin-bottom: 36px;
   }
   .subtitle {
     text-align: start;
@@ -39,11 +34,18 @@
   color: #2c3e50;
 }
 
-.spanName {
+.spanNameWebStudio {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #4d5ae5;
   text-align: center;
+}
+.spanNameTasty {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #9bb537;
 }

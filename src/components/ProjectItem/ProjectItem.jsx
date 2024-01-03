@@ -5,10 +5,12 @@ import css from "./ProjectItem.module.css";
 const ProjectItem = ({
   image,
   title,
+  role,
   desc,
   tech1,
   tech2,
-  tech3,
+  tech3 = undefined,
+  tech4 = undefined,
   demo,
   code,
 }) => {
@@ -20,12 +22,17 @@ const ProjectItem = ({
         </a>
       </div>
       <div className={css.textWrapper}>
-        <h3>{title}</h3>
+        <h3 className={css.title}>
+          {title} <br />({role} project)
+        </h3>
+
         <p className={css.portfolioDesc}>{desc}</p>
+
         <ul className={css.list}>
           <li className={css.technology}>{tech1}</li>
           <li className={css.technology}>{tech2}</li>
-          {/* <li className={css.listItem}>{tech3}</li> */}
+          {tech3 && <li className={css.technology}>{tech3}</li>}
+          {tech4 && <li className={css.technology}>{tech4}</li>}
         </ul>
         <ul className={css.list}>
           <li className={css.listItem}>

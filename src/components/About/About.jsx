@@ -3,7 +3,7 @@ import css from "./About.module.css";
 
 const About = () => {
   return (
-    <section className={css.aboutSection} id="about">
+    <section className={css.aboutSection} id="about" data-aos="fade-left">
       <div className="container">
         <div className={css.aboutWrapper}>
           <img
