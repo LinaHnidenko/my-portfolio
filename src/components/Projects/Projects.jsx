@@ -10,28 +10,36 @@ const Projects = () => {
         <h3 className={css.subtitle}>Innovative and Creative Achievements</h3>
         <ProjectItem
           image="/images/project_1.png"
-          title={
-            <span className={css.spanNameWebStudio}>
-              Web<span className={css.spanNameStudio}>Studio</span>
-            </span>
-          }
+          title="FavShop"
           role="Individual"
-          desc="The 'WebStudio' project is a modern responsive website dedicated to showcasing a studio of web development. Visit the 'Studio' page to learn more about the studio and explore the 'Portfolio' page to see their exciting projects."
-          tech1="HTML"
-          tech2="CSS"
-          demo="https://linahnidenko.github.io/goit-markup-hw-07/index.html"
-          code="https://github.com/LinaHnidenko/goit-markup-hw-07"
+          desc="FavShop is an innovative online store with a diverse range of products, from stylish clothing to cutting-edge electronics, catering to various tastes. Explore the fascinating world of shopping at FavShop."
+          tech1="React"
+          tech2="Tailwind CSS"
+          tech3="Redux Toolkit"
+          demo="https://linahnidenko-ecommerce.netlify.app/"
+          code="https://github.com/LinaHnidenko/ecommerce-web"
         />
         <ProjectItem
-          image="/images/project_5.png"
-          title="Simply Chocolate"
-          role="Team"
-          desc="Simply Chocolate: Indulge in the delectable world of our chocolate-making company. Explore the mouthwatering site to discover the rich ingredients and intricate process behind the exquisite chocolates. "
-          tech1="HTML"
-          tech2="CSS"
-          tech3="JS"
-          demo="https://tanyajulieva.github.io/project-CodeLovers23/index.html"
-          code="https://github.com/TanyaJulieva/project-CodeLovers23"
+          image="/images/project_4.png"
+          title="Cryptoverse"
+          role="Individual"
+          desc="Cryptoverse: Your comprehensive hub for cryptocurrency information. Explore detailed insights on any cryptocurrency, including the latest news updates, designed to keep you informed and engaged."
+          tech1="React"
+          tech2="Ant Design"
+          tech3="Rest API"
+          tech4="RTK Query"
+          demo="https://cryptoverseappln.netlify.app/"
+          code="https://github.com/LinaHnidenko/cryptoapp"
+        />
+        <ProjectItem
+          image="/images/project_3.png"
+          title="Admin Dashboard"
+          role="Individual"
+          desc="Admin Dashboard: A dynamic React app for administrators featuring employee data, task scheduling, and statistical analysis charts. Developed independently to showcase my expertise in crafting efficient and user-friendly interfaces."
+          tech1="React"
+          tech2="Material UI"
+          demo="https://linahnidenko.github.io/dashboard-app-admin"
+          code="https://github.com/LinaHnidenko/dashboard-app-admin"
         />
         <ProjectItem
           image="/images/project_2.png"
@@ -49,26 +57,15 @@ const Projects = () => {
           code="https://github.com/natalikoyani/Team_10"
         />
         <ProjectItem
-          image="/images/project_3.png"
-          title="Admin Dashboard"
-          role="Individual"
-          desc="Admin Dashboard: A dynamic React app for administrators featuring employee data, task scheduling, and statistical analysis charts. Developed independently to showcase my expertise in crafting efficient and user-friendly interfaces."
-          tech1="React"
-          tech2="Material UI"
-          demo="https://linahnidenko.github.io/dashboard-app-admin"
-          code="https://github.com/LinaHnidenko/dashboard-app-admin"
-        />
-        <ProjectItem
-          image="/images/project_4.png"
-          title="Cryptoverse"
-          role="Individual"
-          desc="Cryptoverse: Your comprehensive hub for cryptocurrency information. Explore detailed insights on any cryptocurrency, including the latest news updates, designed to keep you informed and engaged."
-          tech1="React"
-          tech2="Ant Design"
-          tech3="Rest API"
-          tech4="RTK Query"
-          demo="https://cryptoverseappln.netlify.app/"
-          code="https://github.com/LinaHnidenko/cryptoapp"
+          image="/images/project_5.png"
+          title="Simply Chocolate"
+          role="Team"
+          desc="Simply Chocolate: Indulge in the delectable world of our chocolate-making company. Explore the mouthwatering site to discover the rich ingredients and intricate process behind the exquisite chocolates. "
+          tech1="HTML"
+          tech2="CSS"
+          tech3="JS"
+          demo="https://tanyajulieva.github.io/project-CodeLovers23/index.html"
+          code="https://github.com/TanyaJulieva/project-CodeLovers23"
         />
       </div>
     </section>
