@@ -53,7 +53,7 @@ const Projects = () => {
           tech1="HTML"
           tech2="CSS"
           tech3="JS"
-          demo="https://natalikoyani.github.io/Team_10/index.html"
+          demo="https://natalikoyani.github.io/tasty-treats/"
           code="https://github.com/natalikoyani/Team_10"
         />
         <ProjectItem
